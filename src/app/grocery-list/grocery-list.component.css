@@ -1,0 +1,64 @@
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .grocery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .grocery-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grocery-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 8px;
+  }
+  
+  .grocery-item h3 {
+    font-size: 1.2em;
+    margin: 8px 0;
+  }
+  
+  .grocery-item p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .grocery-item button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .grocery-item button:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,16 @@
+<div class="controls">
+    <button (click)="filterByType('all')">All</button>
+    <button (click)="filterByType('fruit')">Fruit</button>
+    <button (click)="filterByType('vegetable')">Vegetable</button>
+    <button (click)="sortBy('price')">Sort by Price</button>
+    <button (click)="sortBy('name')">Sort by Name</button>
+  </div>
+  <div class="grocery-list">
+    <div *ngFor="let item of filteredGroceries" class="grocery-item">
+      <img [src]="'assets/icons/' + item.id + '.svg'" [alt]="item.name" />
+      <h3>{{ item.name }}</h3>
+      <p>${{ item.price.toFixed(2) }}</p>
+      <button (click)="addToCart(item)">Add to Cart</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,16 @@
+<div class="cart">
+    <div *ngFor="let cartItem of cart" class="cart-item">
+      <img [src]="'assets/icons/' + cartItem.item.id + '.svg'" [alt]="cartItem.item.name" />
+      <h3>{{ cartItem.item.name }}</h3>
+      <p>${{ cartItem.item.price.toFixed(2) }}</p>
+      <div class="quantity-controls">
+        <button class="decrease" (click)="decreaseQuantity(cartItem.item)">-</button>
+        <span>{{ cartItem.quantity }}</span>
+        <button class="increase" (click)="increaseQuantity(cartItem.item)">+</button>
+        </div>
+    </div>
+</div>
+<div class="total-price">
+    <h3>Total: ${{ totalPrice.toFixed(2) }}</h3>
+</div>
+  
